@@ -1,9 +1,11 @@
-#Amanda Tan
-#Elmo's Cheez-it
-#SoftDev
-#K04 -- Python dictionairies and random selection
-#2024-09-13
-#time spent:
+"""
+Amanda Tan
+Elmo's Cheez-it
+SoftDev
+K04 -- Python dictionairies and random selection
+2024-09-13
+time spent: 0.33
+"""
 
 import random
 
@@ -22,7 +24,12 @@ krewes = {
               ]
          }
 
-ranNum = random.randint(0, len(krewes)-1)
-print(ranNum)
-nameList = krewes.get(ranNum)
-print(nameList)
+keys = list(krewes.keys())
+#print(keys)
+
+randKey = keys[random.randint(0, len(keys) - 1)]
+#print(krewes.get(randKey))
+names = krewes.get(randKey)
+
+randDevo = names[random.randint(0, len(names) - 1)]
+print(randDevo)
