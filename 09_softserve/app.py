@@ -41,12 +41,13 @@ def randomizeJob(dict):			#randomizes job, weighted
 def hello_world():
     allData = fileParser("occupations.csv")
     headers = allData[0][0].split(",")
-    dict = splitHeaders(allData[1:len(allData)])
-    randJob = f"{headers[0]}: {randomizeJob(dict)}\n"
-    jobList = f"<table><tr><th>{header[0]}</th></tr>"
+    dict = splitHeaders(allData[1:])
+    randJob = f"{headers[0]}: {randomizeJob(dict)}<br></br>"
+    jobList = f"<table><tr><th>{headers[0]}</th></tr>"
     for job in dict:
-        jobList += f"<tr><td>{job[0]}</td></tr>"
-    return f"{randJob}{jobList}"
+        jobList += f"<tr><td>{job}</td></tr>"
+    return f"{randJob}{jobList}</table>"
 
-app.debug = True
-app.run()
+if __name__ == "__main__":      # true if this file NOT imported
+    app.debug = True            # enable auto-reload upon code change
+    app.run()
