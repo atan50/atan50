@@ -1,5 +1,5 @@
 """
-Ethan Sie
+Amanda Tan
 Elmos_Cheez-its
 SoftDev
 K12 - flask jinja
