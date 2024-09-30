@@ -19,6 +19,15 @@ Q2:
 Predictions: Argument 1: The model template html displayed on the server; Argument 2: The title/name displayed of the server; Argument 3: Takes in data to be applied
 Results: Argument 1: We were correct; Argument 2: It was displayed on the tab; Argument 3: We were correct
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+QCC/DISCO:
+
+- string is the file name
+- foooo is the name of the tab that is created from the local host
+- the parameters in render template correspond to variables that are then sent to the python code in the html
+
+- the {{}} in the html creates a variable. the %% tell html that there is runnable python code within the brackets.
+- {% endfor %} tells html to end the for loop since there isnt like an indent or closing bracket in html to indicate the end. removing it results in syntax error
+
 """
 
 
