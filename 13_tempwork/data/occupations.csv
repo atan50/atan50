@@ -1,4 +1,4 @@
-Job Class,Percentage
+Job Class,Percentage, Resource
 Management,6.1,https://www.indeed.com/career-advice/finding-a-job/getting-into-management
 Business and Financial operations,5,https://aafa.com/blog/how-to-begin-a-career-in-finance
 Computer and Mathematical,2.7,https://techguide.org/computer-science/computer-science-resources/how-to-get-into-computer-science/
@@ -12,13 +12,13 @@ Healthcare practioners and technical,5.5,https://topworkplaces.com/how-to-get-jo
 Healthcare support,2.8,https://www.allnursingschools.com/how-to-become-a-nurse/
 Protective service,2.3,https://www.indeed.com/career-advice/finding-a-job/how-to-become-a-cps-worker
 Food preparation and serving,8.3,https://www.indeed.com/career-advice/finding-a-job/starting-a-food-business
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
+Building and grounds cleaning and maintenance,3.7, https://www.bls.gov/ooh/building-and-grounds-cleaning/home.htm 
+Personal care and service,4, https://www.careeronestop.org/ 
+Sales,10.2, https://www.indeed.com/career-advice/finding-a-job/no-experience-sales-jobs 
+Office and administrative support,15.1, https://www.bls.gov/ooh/office-and-administrative-support/home.htm 
+"Farming, fishing and forestry",0.6, https://www.bls.gov/ooh/farming-fishing-and-forestry/home.htm 
+Construction and extraction,4.3, https://www.bls.gov/ooh/ construction-and-extraction/home.htm 
+"Installation, maintenance and repair",3.8, https://www.bls.gov/ooh/installation-maintenance-and-repair/home.htm 
+Production,6.1, https://www.backstage.com/magazine/article/crew-101-first-production-job-70414/
+Transportation and material moving,6.5, https://powerfulgeography.org/k-12-education/resources/geography-in-jobs-and-careers-pages/transportation-and-material-moving-job-summaries/ 
 Total,99.8
