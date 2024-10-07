@@ -1,0 +1,38 @@
+Amanda Tan
+Elmo's Cheez-it
+SoftDev
+K14 -- Request Objects
+2024-10-07
+time spent: .7 hours
+
+DISCO:
+* print(app) in the disp_loginpage() function prints "<Flask 'app'>
+* print(request) fetches the host server address: "<Request 'http://127.0.0.1:5000/>
+* request.args contains the list of requests or user inputs in the system
+	* in the index page, request.args contains an empty list: ImmutableMultiDict([])
+	* in the /auth route, the list contains "[('username', '{user}'), ('sub1', 'Submit')]"
+* request.args['{variable}'] contains the value of the user input associated with the variable
+	* here, request.args['(username)'] contains the user input prompted on the index page
+* request.headers contains information such as the host, connection, language
+-----------------------------------------------------------------------
+
+
+Q/C/C:
+* 
+* 
+* 
+-----------------------------------------------------------------------
+
+
+OTHER?
+* 
+* 
+* 
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
