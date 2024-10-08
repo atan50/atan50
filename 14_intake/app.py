@@ -1,6 +1,10 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# October 2024
+"""
+Elmos_Cheez-its: Amanda Tan, Ethan Sie, Aidan Wong
+SoftDev
+K14 - User Input with Flask
+2024-10-07
+time spent: 0.7
+"""
 
 # import conventions:
 # list most general first (standard python library)
