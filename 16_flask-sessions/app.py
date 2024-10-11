@@ -13,7 +13,6 @@ app = Flask(__name__)
 
 app.secret_key = os.urandom(32)
 
-sessions = {}
 
 users = {
     'Aidan': 'bill',
@@ -32,8 +31,10 @@ def disp_loginpage():
 
         if name in users and users[name] == password:
             session_id = os.urandom(16)
-            sessions[session_id] = {'username': name}
             session['session_id'] = session_id
+            session['username'] = name
+
+            print(session)
             return redirect('/home')
 
         return redirect('/') # Used to remove the confirm form resubmission pop up when page is refreshed after entering incorrect data
@@ -45,15 +46,14 @@ def disp_loginpage():
 @app.route("/home", methods=['GET', 'POST'])
 def authenticate():
     if 'session_id' in session:
-        if session['session_id'] in sessions:
-            returnName = sessions[session['session_id']]['username']
-            return render_template('response.html', username=returnName)
+        returnName = session['username']
+        return render_template('response.html', username=returnName)
     return redirect('/')
 
 @app.route("/logout", methods=['GET', 'POST'])
 def disp_logoutpage():
     if 'session_id' in session:
-        returnName = sessions[session['session_id']]['username']
+        returnName = session['username']
         session.pop('session_id')
         return render_template('logout.html', username=returnName)
     return redirect('/')
