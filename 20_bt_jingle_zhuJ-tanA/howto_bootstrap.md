@@ -7,7 +7,7 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
 
 ### Prerequisites:
 
-- Create a html file
+- Create a html file with a header and body
 - Install Bootstrap via package manager or include via CDN (Content Delivery Network) inside html file
 
 ### Procedure:
@@ -48,7 +48,7 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
     - Assigning the collapse class will specify what collapses
 4. Open an ordered list with ul tags indide the div tags: `<ul class="navbar-nav"></ul>`
     - Adding a `me-auto` class will auto-adjust margins
-6. Create list objects for the nav bar with li and hyperlink tags inside the ul tags: `<li class="nav-item"><a class="nav-link"></a></li>`
+5. Create list objects for the nav bar with li and hyperlink tags inside the ul tags: `<li class="nav-item"><a class="nav-link"></a></li>`
      - Add the active class to the page currently open
      - Adding the "dropdown" class to an "li" tag will enable dropdown options:
          ```
@@ -64,13 +64,20 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
           </ul>
         </li>
          ```
-7. Create a Search bar and Search button:
+6. Create a Search bar and Search button:
     ```
     <form class="d-flex">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
     ```
+    
+### Creating a grid
+- Add `<div class="row"></div>` for all content that will be horizontally aligned together
+- Add `<div class="col"></div>` for all content that will be vertically aligned
+- Rows and columns can be put inside each other and vice versa
+    - The broader class will take precedence
+- Sizes can be added to rows and columns with `-{numeric size}`
 
 ### Resources
 * [Bootstrap](https://getbootstrap.com)
