@@ -11,72 +11,75 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
 - Install Bootstrap via package manager or include via CDN (Content Delivery Network) inside html file
 
 ### Procedure:
-1. Install/CDN:
-- You can install via package manager:
-`$ npm install bootstrap@5.3.3`
-`$ gem install bootstrap -v 5.3.3`
+1. You can install via package manager:
 
-- Or include via CDN (Place the <link> tag in the <head>):
-```
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
-</html>
-```
-- If you plan to use dropdowns, popovers, or tooltips, place the `<script>` tag for JavaScript bundle before `</body>`:
-```
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-```
+    `$ npm install bootstrap@5.3.3`
 
-1. Step, with `inline code`, and/or...
-1. Step, with
+    `$ gem install bootstrap -v 5.3.3`
+
+   OR
+   
+    Include via CDN (Place the `<link>` tag in the `<head>`):
     ```
-    generic code block or terminal command
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+      </head>
+      <body>
+        <h1>Hello, world!</h1>
+      </body>
+    </html>
     ```
-   and/or...
-    ```python
-    print("this that Python tho")
+1. If you plan to use dropdowns, popovers, or tooltips, place the `<script>` tag for JavaScript bundle before `</body>`:
     ```
-   and/or...
-    ```html
-    print("this that Python tho")
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     ```
-   and/or...
-    ```javascript
-    var foo = "this that JS tho";
+
+### Creating a Navbar
+1. Open and close nav tags: `<nav class="navbar"></nav>`
+2. Vertically align (or stack) the navbar by adding `navbar-expand{-sm|-md|-lg|-xl}` as a class
+    - Adding a size after "expand" will specify smaller than which sizes the navbar will collapse
+    - Excluding a size will always collapse the navbar
+3. Open and close div tags in the nav tags to contain links : `<div class=collapse navbar-collapse"></div>`
+    - Assigning the collapse class will specify what collapses
+4. Open an ordered list with ul tags indide the div tags: `<ul class="navbar-nav"></ul>`
+    - Adding a `me-auto` class will auto-adjust margins
+6. Create list objects for the nav bar with li and hyperlink tags inside the ul tags: `<li class="nav-item"><a class="nav-link"></a></li>`
+     - Add the active class to the page currently open
+     - Adding the "dropdown" class to an "li" tag will enable dropdown options:
+         ```
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+         ```
+7. Create a Search bar and Search button:
     ```
-   ... etc.
-1. Step, with [hyperlink](https://xkcd.com),  and/or...
-1. Step, with example(s), and/or...
-   - *e.g.* `$ sl`    
-1. Step, including menu paths (Firefox: Alt-F (to reveal menu bar) -> Tools -> Browser Tools -> Browser Console)
-1. etc...
-1. Until you have written out all steps necessary to complete the job.
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    ```
 
 ### Resources
-* thing1
-* thing2
-* [link0](https://xkcd.com)
+* [Bootstrap](https://getbootstrap.com)
  
 ---
 
-Accurate as of (last update): 2024-mm-dd
+Accurate as of (last update): 2024-11-14
 
 #### Contributors:  
-Clyde "Thluffy" Sinclair  
-Thundercleese, pd2  
-Buttercup, pd4  
-Blossom, pd5  
-Bubbles, pd4  
-Fake Grimlock, pd5  
-Rory Breaker, pd0  
+Amanda Tan, pd4  
+Michelle Zhu, pd4
 
-_Note: the two spaces after each name are important! ( <--burn after reading)  _
