@@ -118,10 +118,36 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
 - A caption be be provided to the table with the caption tags: `<caption></caption>`
 - Create a thead class to house the headers of the table
 - A theme can be given to the thead with a class
-    - Example: `<thead class="table-dark"> will create a dark theme
+    - Example: `<thead class="table-dark">` will create a dark theme
 - Create tr tags to hold horizontal elements of the table: `<tr></tr>`
 - Use th tags to for header elements and td tags for body elements
-    - Opena and close `tbody` tags to house `tr` and `td` tags outside the first row 
+    - Open and close `tbody` tags to house `tr` and `td` tags outside the first row 
+
+### Creating a Form
+- Create and close form tags: `<form></form>`
+- Create div classes for each form item: `<div class="form-group"></div>`
+- Inside the above class, create label and input tags to add a text label and a form respectively
+- Assign the value to the `for` attribute in the label tag and the id attriubute in the input tag to the corresponding variable in an elsewhere file
+- Add the `"form-control"` class to the input tags
+- Assign text the the `placeholder` attribute in the input tag to display text in the empty form
+
+  ```
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Example label</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+      </div>
+      <div class="form-group mt-2">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group mt-2">
+        <label for="inputPassword2" class="sr-only">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+      </div>
+    </form>
+  ```
+    
 
 ### Resources
 * [Bootstrap](https://getbootstrap.com)
