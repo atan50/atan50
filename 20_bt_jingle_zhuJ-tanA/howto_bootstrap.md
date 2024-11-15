@@ -103,6 +103,15 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
 - The size of buttons can be adjusted by adding `btn-sm` or `btn-lg` as a class
 - Buttons can be disabled by toggling `disabled`:  `<button type="button" class="btn " disabled>Button</button>`
 
+### Creating a Card
+- Create a div class for a card: `<div class="card"></div>`
+- Create a div class for a header and body:
+    ```
+    <div class="card-header">Header</div>
+    <div class="card-body"></div>
+    ```
+- Fill tags with desired content
+
 ### Resources
 * [Bootstrap](https://getbootstrap.com)
  
