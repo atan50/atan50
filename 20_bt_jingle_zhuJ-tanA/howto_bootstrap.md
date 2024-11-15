@@ -64,7 +64,14 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
           </ul>
         </li>
          ```
-6. Create a Search bar and Search button:
+6. A disabled link can be included by adding a `disabled` class and toggling `aria-disabled`:
+    ```
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+    ```
+8. Add text between corresponding tags to label links
+9. Create a Search bar and Search button:
     ```
     <form class="d-flex">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -78,6 +85,23 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
 - Rows and columns can be put inside each other and vice versa
     - The broader class will take precedence
 - Sizes can be added to rows and columns with `-{numeric size}`
+
+### Creating Buttons
+- Create button tags: `<button type="button" class="btn"></button>`
+- There are pre-built buttons styles in Bootstrap, including:
+    ```
+    <button type="button" class="btn btn-primary">Primary Button</button>
+    <button type="button" class="btn btn-secondary">Secondary Button</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    ```
+- `-outline` can be added between `btn` and `-{style}` to only display an outlined button with no color filling
+- The size of buttons can be adjusted by adding `btn-sm` or `btn-lg` as a class
+- Buttons can be disabled by toggling `disabled`:  `<button type="button" class="btn " disabled>Button</button>`
 
 ### Resources
 * [Bootstrap](https://getbootstrap.com)
