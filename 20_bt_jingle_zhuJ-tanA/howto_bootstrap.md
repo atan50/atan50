@@ -112,6 +112,17 @@ Bootstrap is a very useful CSS styling tool with prebuilt display functions (com
     ```
 - Fill tags with desired content
 
+### Creating a Table
+- Create a table with table tags: `<table class="table"></table>`
+- A border can be added to the table by adding the class `table-bordered`
+- A caption be be provided to the table with the caption tags: `<caption></caption>`
+- Create a thead class to house the headers of the table
+- A theme can be given to the thead with a class
+    - Example: `<thead class="table-dark"> will create a dark theme
+- Create tr tags to hold horizontal elements of the table: `<tr></tr>`
+- Use th tags to for header elements and td tags for body elements
+    - Opena and close `tbody` tags to house `tr` and `td` tags outside the first row 
+
 ### Resources
 * [Bootstrap](https://getbootstrap.com)
  
