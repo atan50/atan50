@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--
+Jingle: Michelle Zhu, Amanda Tan
+SoftDev
+K22: Tailwind
+2024-11-19
+Time Spent: 1
+-->
+
+<!--no-js prevents flashes of unstyled content on page load-->
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Tutorial</title>
+    <!--Imports the CSS Stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" rel="stylesheet">
+  </head>
+
+<body style="background-color: lightgray;  padding: 1rem">
+
+
+      <!--Top Navigation with dropdown menu and search box-->
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Foundation</li>
+            <!--li for each navbar item, ul with class menu vertical for additional items when a navbar item is hovered over-->
+            <li>
+              <a href="#">Wood</a>
+              <ul class="menu vertical">
+                <li class="tabs-title"><a href="#">Oak</a></li>
+                <li class="tabs-title"><a href="#">Pink</a></li>
+                <li class="tabs-title"><a href="#">Cedar</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Cement</a></li>
+            <li><a href="#">Bricks</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <!--Menu class puts the search and button features side by side-->
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        
+      </div>
+      <!-- Imports JQuery and Foundation JS from CDN to enable scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+      <!--Necessary line to use CSS and scripts-->
+      <script>
+        $(document).foundation();
+      </script>
+    </body>
+</html>
