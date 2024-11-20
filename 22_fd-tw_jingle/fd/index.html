@@ -3,8 +3,8 @@
 <!--
 Jingle: Michelle Zhu, Amanda Tan
 SoftDev
-K22: Tailwind
-2024-11-19
+K22: Foundation
+2024-11-20
 Time Spent: 1
 -->
 
@@ -19,45 +19,118 @@ Time Spent: 1
     <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" rel="stylesheet">
   </head>
 
-<body style="background-color: lightgray;  padding: 1rem">
+    <!-- Top Navigation with dropdown menu -->
+    <div class="top-bar" id="example-menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Team Jingle: Michelle, Amanda</li>
+          <li>
+            <a href="#">Drops</a>
+            <ul class="menu vertical">
+              <li><a href="#">Droppy1</a></li>
+              <li><a href="#">Droppy2</a></li>
+              <li><a href="#">Droppy3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">North-Pole</a></li>
+          <li><a href="#">New-Years</a></li>
+        </ul>
+      </div>
+<!-- Search box -->
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search :)"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
 
+    <!--Tab navigation with collapsing functionality-->
+    <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+      <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Tab Summary</a></li>
+      <li class="tabs-title"><a href="#panel2c">Meow</a></li>
+      <li class="tabs-title"><a href="#panel3c">Woof</a></li>
+      <li class="tabs-title"><a href="#panel4c">Boo</a></li>
+    </ul>
 
-      <!--Top Navigation with dropdown menu and search box-->
-      <div class="top-bar" id="example-menu">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">Foundation</li>
-            <!--li for each navbar item, ul with class menu vertical for additional items when a navbar item is hovered over-->
-            <li>
-              <a href="#">Wood</a>
-              <ul class="menu vertical">
-                <li class="tabs-title"><a href="#">Oak</a></li>
-                <li class="tabs-title"><a href="#">Pink</a></li>
-                <li class="tabs-title"><a href="#">Cedar</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Cement</a></li>
-            <li><a href="#">Bricks</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <!--Menu class puts the search and button features side by side-->
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+      <div class="tabs-panel is-active" id="panel1c">
+        <p>Tabs can condense data on a page. Click, appear. Click away, disappear!</p>
+      </div>
+      <div class="tabs-panel" id="panel2c">
+        <img src="https://i.pinimg.com/originals/89/c6/05/89c605589cc891c32f2682839adec2a3.jpg">
+      </div>
+      <div class="tabs-panel" id="panel3c">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*">
+      </div>
+      <div class="tabs-panel" id="panel4c">
+        <img src="https://t3.ftcdn.net/jpg/09/22/32/36/360_F_922323606_WbBmr1F7bW0Kvusq1WouE5CG5cXb2w9B.jpg">
+      </div>
+    </div>
+    <br>
+
+    <!--Centered Thumbnail Image using grid container-->
+    <div class="grid-container">
+      <div class="grid-x align-center">
+        <div class="cell small-6 text-center">
+          <img class="thumbnail" src="https://www.creativefabrica.com/wp-content/uploads/2023/04/15/Cute-Cat-Kawaii-Chibi-Graphic-67307453-1.png" alt="Uwu.">
         </div>
       </div>
+    </div>
 
-      <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        
+    <!--Accordian to segment information in a nice way-->
+    <ul class="accordion" data-accordion>
+      <!--is-active makes it open on page refresh, otherwise closed-->
+      <li class="accordion-item is-active" data-accordion-item>
+        <a href="#" class="accordion-title">Accordion Container</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Accordian containers are the vertical version of tabs. Click, expand. Only one is open at a time.</p>
+        </div>
+      </li>
+      <!--You can put anything inside these accordion items-->
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">Accordion Part 2</a>
+        <div class="accordion-content" data-tab-content>
+          <p>More accordion fun</p>
+          <img src="https://us.123rf.com/450wm/alphavector/alphavector2310/alphavector231000064/215525969-man-plays-button-accordion-and-sings-songs-to-amuse-visitors-to-concert-of-rare-musical-instruments.jpg?ver=6">
+        </div>
+      </li>
+    </ul>
+
+    <div class="grid-container">
+      <form>
+            <div class="grid-container">
+                <div class="medium-6 cell">
+                  <label>Enter your Name
+                    <input type="text" placeholder="Name">
+                  </label>
+                </div>
+                <div class="medium-6 cell">
+                  <label>Enter your Duckie Name!
+                    <input type="text" placeholder="Duckie">
+                  </label>
+                </div>
+            </div>
+          </form>
+    </div>
+
+    <div class="grid-container">
+      <div class="reveal" id="exampleModal1" data-reveal>
+        <img src="https://ih1.redbubble.net/image.4603320706.2577/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="bye">
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <!-- Imports JQuery and Foundation JS from CDN to enable scripts -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
-      <!--Necessary line to use CSS and scripts-->
-      <script>
-        $(document).foundation();
-      </script>
-    </body>
+      <p><button class="button" data-open="exampleModal1">Say Bye Here</button></p>
+    </div>
+
+
+    <!-- Imports JQuery and Foundation JS from CDN to enable scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+    <!--Necessary line to use CSS and scripts-->
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
