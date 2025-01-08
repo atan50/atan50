@@ -7,7 +7,7 @@
 
 //factorial:
 
-var fact = function(x) {
+var fact = function(n) {
   if(n == 1){
     return n;
   }
