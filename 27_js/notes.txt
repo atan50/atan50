@@ -1,0 +1,9 @@
+Team MagiMan :: Amanda Tan, Kishi Wijaya
+SoftDev pd4
+K27 - Basic functions in JavaScript
+2025-01-06m
+
+NOTES
+* Can write and run JavaScript with Ctrl + Shift + K to open Dev console
+* End all code with semicolons in JavaScript
+  * Can mess up code without throwing errors

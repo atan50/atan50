@@ -7,25 +7,37 @@
 
 //factorial:
 
-var fact = function(x){
+var fact = function(x) {
   if(n == 1){
     return n;
   }
-  return (n*fact(n-1))
+  return (n*fact(n-1));
 }
 
 //TEST CALLS
 // (writing here can facilitate EZer copy/pasting into dev console now and later...)
-
-
+fact(1)
+fact(2)
+fact(3)
 //-----------------------------------------------------------------
 
 
 //fib:
 
-//<your team's fib(n) implementation>
+var fib = function(n) {
+  if (n == 0){
+    return 0;
+    if (n == 1){
+      return 1;
+    }
+    return ((fib(n-1)) + (fib(n-2)));
+  }
+}
 
 //TEST CALLS
 // (writing here can facilitate EZer copy/pasting into dev console now and later...)
-
+fib(0)
+fib(1)
+fib(2)
+fib(3)
 //=================================================================
