@@ -18,27 +18,29 @@
       .green {color : #00ff00;}
       .blue  {color : #0000ff;}
     </style>
+    <script src="dommy_consolery.js"></script>
   </head>
 
   <body>
-    <h1 id="h" class="blue">Hello World!</h1>
+    <h1 id="h">Hello World!</h1>
 
-    <div id="div1" class="green">This is a div</div>
-    <div id="div2">This is a second div</div>
-    <div class="blue">This is a toid div</div>
+    <div id="div1" class="green">Fibonacci</div>
 
-    <ol id="thelist">
-      <li class="">item 0</li>
-      <li class="green blue">item 1</li>
-      <li class="green blue">item 2</li>
-      <li class="red green blue">item 3</li>
-      <li class="red green blue">item 4</li>
-      <li class="green blue">item 5</li>
-      <li class="green blue">item 6</li>
-      <li class="">item 7</li>
+    <ol id="thelist1">
+      <li class="green">fib(0): <script> document.write(fib(0)); </script></li>
+      <li class="green">fib(4): <script> document.write(fib(4)); </script></li>
     </ol>
 
-    <script src="dommy_consolery.js"></script>
+    <div id="div2" class="blue">Factorial</div>
+    <ol id="thelist2">
+      <li class="blue">fact(3): <script> document.write(fact(3)); </script></li>
+      <li class="blue">fact(4): <script> document.write(fact(4)); </script></li>
+    </ol>
+    <div class="red">GCD</div>
+    <ol id="thelist3">
+      <li class="red">gcd(18, 27): <script> document.write(gcd(18, 27)); </script></li>
+      <li class="red">gcd(64, 72): <script> document.write(gcd(64, 72)); </script></li>
+    </ol>
 
   </body>
 </html>

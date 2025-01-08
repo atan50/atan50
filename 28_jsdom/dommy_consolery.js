@@ -31,7 +31,7 @@
 // Team MagiMan :: Amanda Tan, Kishi Wijaya
 // SoftDev pd4
 // K28 -- Getting more comfortable with the dev console and the DOM
-// 2025-01-07t
+// 2025-01-08w
 // --------------------------------------------------
 
 
@@ -102,9 +102,40 @@ var stripe = function()
 
 //insert your implementations here for...
 // FIB
+var fib = function(n) {
+  if (n == 0){
+    return 0;
+    if (n == 1){
+      return 1;
+    }
+    return ((fib(n-1)) + (fib(n-2)));
+  }
+}
 // FAC
+var fact = function(n) {
+  if (n == 1){
+    return n;
+  }
+  return (n*fact(n-1));
+}
 // GCD
+var gcd = function(a, b) {
+  if (a == 0 || b == 0) {
+    return 0;
+  }
 
+  if(a == b){
+    return a;
+  }
+
+  // if a is greater than b
+  if(a > b){
+    return gcd(a-b, b);
+  }
+  // if b is greater than a
+  return gcd(a, b-a);
+
+}
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
