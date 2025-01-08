@@ -1,4 +1,4 @@
-Name: Amanda Tan
+Name: Amanda Tan  
 Period: 4
 
 <!--
