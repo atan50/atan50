@@ -1,5 +1,5 @@
 Name: Amanda Tan  
-Period: 4
+Period: 5
 
 <!--
 **atan50/atan50** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
